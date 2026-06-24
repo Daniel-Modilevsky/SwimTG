@@ -1,0 +1,39 @@
+# Build output
+bin/
+obj/
+
+# SQLite databases
+*.db
+*.db-shm
+*.db-wal
+
+# User-specific files
+*.user
+*.suo
+.vs/
+*.rsuser
+.idea/
+*.DotSettings.user
+
+# NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+packages/
+nuget.config.local
+
+# Publish output
+publish/
+**/publish/
+
+# ASP.NET Core secrets
+appsettings.*.local.json
+secrets.json
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
