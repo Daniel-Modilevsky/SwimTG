@@ -28,6 +28,8 @@ publish/
 
 # ASP.NET Core secrets
 appsettings.*.local.json
+appsettings.*.json
+
 secrets.json
 
 # Logs

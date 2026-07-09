@@ -1,3 +1,4 @@
+using System.Reflection.Metadata.Ecma335;
 using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Mvc;
@@ -5,9 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")] //host/api/users
-    [ApiController]
-    public class UsersController(AppDbContext context) : ControllerBase
+    public class UsersController(AppDbContext context) : BaseApiController
     {
         [HttpGet]
         public async Task<ActionResult<List<User>>> GetUsers()

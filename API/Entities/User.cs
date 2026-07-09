@@ -2,9 +2,10 @@ namespace API.Entities;
 
 public class User
 {
-    public required string Id {get; set;} = Guid.NewGuid().ToString();
+    public string Id {get; set;} = Guid.NewGuid().ToString();
     public required string Name {get; set;}
     public required string Email {get; set;}
-    public required string Password {get; set;}
-
+    public required byte[] PasswordHash {get; set;}
+    public required byte[] PasswordSalt {get; set;} // random the hash
+    public string? ActiveToken { get; set; }
 }
