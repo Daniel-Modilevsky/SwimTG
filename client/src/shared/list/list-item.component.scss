@@ -1,0 +1,33 @@
+@use '../../styles/tokens' as *;
+
+.list-item {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  gap: $space-md;
+  padding: $space-sm 0;
+}
+
+.list-item-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.list-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: $space-xs;
+}
+
+.list-item-title {
+  font-weight: $font-weight-medium;
+  color: $color-text-primary;
+}
+
+.list-item-subtitle {
+  font-size: $font-size-xs;
+  color: $color-text-secondary;
+}

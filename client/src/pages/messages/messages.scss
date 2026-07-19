@@ -1,0 +1,11 @@
+@use '../../styles/tokens' as *;
+
+:host {
+  display: block;
+  padding: $space-2xl $space-3xl;
+}
+
+.placeholder-copy {
+  color: $color-text-secondary;
+  font-size: $font-size-md;
+}

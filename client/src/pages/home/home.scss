@@ -1,0 +1,7 @@
+@use '../../styles/tokens' as *;
+
+:host {
+  display: block;
+  padding: $space-2xl $space-3xl;
+  max-width: $content-max-width-wide;
+}

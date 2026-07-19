@@ -1,0 +1,51 @@
+@use '../../styles/tokens' as *;
+
+.page-header {
+  padding: 25.5px $space-3xl;
+  background: $color-header-bg;
+  border-bottom: 1px solid $color-border;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: $space-md;
+}
+
+.page-title {
+  margin: 0;
+  color: $color-text-primary;
+  font-size: $font-size-3xl;
+  font-weight: $font-weight-semibold;
+  text-align: start;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: $color-text-secondary;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: #{$breakpoint-mobile}) {
+  .page-header {
+    padding: $space-lg $space-2xl;
+  }
+
+  .page-title {
+    font-size: $font-size-2xl;
+  }
+
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

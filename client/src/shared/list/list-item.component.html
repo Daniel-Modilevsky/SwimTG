@@ -1,0 +1,7 @@
+<li class="list-item">
+  <img class="list-item-image" [src]="src()" [alt]="title()" (error)="onImageError()" />
+  <div class="list-item-content">
+    <span class="list-item-title">{{ title() }}</span>
+    <span class="list-item-subtitle">{{ subtitle() }}</span>
+  </div>
+</li>

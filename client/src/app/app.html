@@ -1,11 +1,1 @@
-<h1>{{ title() }}</h1>
-
-<app-list>
-  @for (user of users(); track user.id) {
-    <app-list-item
-      [title]="user.name"
-      [subtitle]="user.email"
-      [fallbackImage]="fallbackImage"
-    />
-  }
-</app-list>
+<app-layout />

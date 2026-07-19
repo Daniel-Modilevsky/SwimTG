@@ -1,0 +1,15 @@
+<header class="page-header" role="banner">
+  <button
+    type="button"
+    class="menu-btn"
+    aria-label="Open menu"
+    (click)="menuToggle.emit()"
+  >
+    <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2.5 5.5h15" />
+      <path d="M2.5 10h15" />
+      <path d="M2.5 14.5h15" />
+    </svg>
+  </button>
+  <h1 class="page-title">{{ title() }}</h1>
+</header>

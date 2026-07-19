@@ -1,0 +1,109 @@
+/**
+ * Single source of truth: colors and layout (margins, padding, font sizes).
+ * Notion-inspired neutral palette.
+ * In SCSS files: @use '../../styles/tokens' as * (from src/layout/xxx or src/pages/xxx or src/shared/xxx);
+ *                @use 'styles/tokens' as * (from src/styles.scss).
+ */
+
+// ----- Colors -----
+$color-bg-primary: #f9f9f9;
+$color-bg-surface: #ffffff;
+$color-bg-secondary: #efefef;
+$color-bg-hover: #f0f0f0;
+$color-bg-selected: #efefef;
+$color-sidebar-bg: #ffffff;
+$color-sidebar-active-bg: #e8f0fe;
+$color-header-bg: #ffffff;
+$color-notification-bg: #2f2f2f;
+$color-overlay: rgba(0, 0, 0, 0.5);
+
+$color-text-primary: #37352f;
+$color-text-secondary: #787774;
+$color-text-muted: #9b9a97;
+$color-text-inverse: #ffffff;
+
+$color-border: #e3e3e3;
+$color-border-light: #ededed;
+
+$color-accent: #007aff;
+$color-accent-hover: #0056b3;
+$color-focus-ring: rgba(0, 122, 255, 0.2);
+
+$color-error: #b91c1c;
+$color-error-bg: #fef2f2;
+$color-destructive: #dc2626;
+$color-destructive-hover: #b91c1c;
+$color-success: #16a34a;
+$color-success-hover: #15803d;
+$color-info: #0b7dda;
+$color-info-hover: #0967b8;
+$color-neutral: #757575;
+$color-neutral-hover: #616161;
+
+// Status badge colors
+$color-status-completed-bg: #dcfce7;
+$color-status-completed-text: #16a34a;
+$color-status-processing-bg: #dbeafe;
+$color-status-processing-text: #2563eb;
+$color-status-pending-bg: #fef3c7;
+$color-status-pending-text: #d97706;
+$color-status-failed-bg: #fee2e2;
+$color-status-failed-text: #b91c1c;
+$color-status-cancelled-bg: #f3f4f6;
+$color-status-cancelled-text: #6b7280;
+
+// Extended palette (stat icons, accents)
+$color-purple: #7c3aed;
+$color-emerald: #10b981;
+
+// ----- Spacing (px) -----
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 12px;
+$space-lg: 16px;
+$space-xl: 20px;
+$space-2xl: 24px;
+$space-3xl: 32px;
+$space-4xl: 40px;
+$space-5xl: 48px;
+$space-6xl: 60px;
+$space-8xl: 80px;
+
+// ----- Layout -----
+$sidebar-width: 260px;
+$sidebar-width-mobile: 280px;
+$content-max-width: 720px;
+$content-max-width-wide: 800px;
+$breakpoint-mobile: 768px;
+$breakpoint-narrow: 600px;
+
+// ----- Typography (px) -----
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 15px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 32px;
+$font-size-display: 40px;
+
+$line-height-tight: 1.35;
+$line-height-body: 1.6;
+$line-height-relaxed: 1.7;
+
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// ----- Radii -----
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 12px;
+
+// ----- Shadows -----
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 8px 32px rgba(0, 0, 0, 0.2);

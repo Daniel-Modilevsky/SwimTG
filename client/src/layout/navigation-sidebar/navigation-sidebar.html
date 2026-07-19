@@ -1,0 +1,76 @@
+<nav
+  class="sidebar"
+  [class.open]="isOpen()"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Navigation menu"
+>
+  <div class="sidebar-header">
+    <span class="sidebar-brand">SwimTG</span>
+    <button
+      type="button"
+      class="sidebar-close-btn"
+      aria-label="Close menu"
+      (click)="closeMenu.emit()"
+    >
+      <svg class="close-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 5l10 10" />
+        <path d="M15 5l-10 10" />
+      </svg>
+    </button>
+  </div>
+
+  <ul class="nav-list" role="list">
+    <li>
+      <a
+        class="nav-link"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMenu.emit()"
+      >
+        <svg class="nav-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 6c1.4 1.4 2.8 1.4 4.2 0 1.4-1.4 2.8-1.4 4.2 0 1.4 1.4 2.8 1.4 4.2 0 1.4-1.4 2.8-1.4 4.2 0" />
+          <path d="M2 11c1.4 1.4 2.8 1.4 4.2 0 1.4-1.4 2.8-1.4 4.2 0 1.4 1.4 2.8 1.4 4.2 0 1.4-1.4 2.8-1.4 4.2 0" />
+          <path d="M2 16c1.4 1.4 2.8 1.4 4.2 0 1.4-1.4 2.8-1.4 4.2 0 1.4 1.4 2.8 1.4 4.2 0 1.4-1.4 2.8-1.4 4.2 0" />
+        </svg>
+        <span class="nav-link-label">Workouts</span>
+        <span class="nav-link-dot" aria-hidden="true"></span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="nav-link"
+        routerLink="/training-builder"
+        routerLinkActive="active"
+        (click)="closeMenu.emit()"
+      >
+        <svg class="nav-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12.4 3.6a3 3 0 0 1 4 4l-8 8-4.8 1.2 1.2-4.8 8-8z" />
+          <path d="M11 5l4 4" />
+        </svg>
+        <span class="nav-link-label">Training builder</span>
+        <span class="nav-link-dot" aria-hidden="true"></span>
+      </a>
+    </li>
+    <li>
+      <a
+        class="nav-link"
+        routerLink="/messages"
+        routerLinkActive="active"
+        (click)="closeMenu.emit()"
+      >
+        <svg class="nav-link-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 5.5h14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H9l-3.5 3v-3H3a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1z" />
+        </svg>
+        <span class="nav-link-label">Messages</span>
+        <span class="nav-link-dot" aria-hidden="true"></span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="nav-auth">
+    <a class="nav-auth-link" aria-disabled="true">Sign in</a>
+    <a class="nav-auth-link" aria-disabled="true">Sign up</a>
+  </div>
+</nav>

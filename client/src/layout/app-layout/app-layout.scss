@@ -1,0 +1,43 @@
+@use '../../styles/tokens' as *;
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: $sidebar-width;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content-body {
+  flex: 1;
+  overflow: auto;
+  background: $color-bg-primary;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: $color-overlay;
+  z-index: 150;
+
+  &.open {
+    @media (max-width: #{$breakpoint-mobile}) {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: #{$breakpoint-mobile}) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

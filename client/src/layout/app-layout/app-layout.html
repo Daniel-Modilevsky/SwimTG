@@ -1,0 +1,10 @@
+<div class="app-layout">
+  <app-navigation-sidebar [isOpen]="isMenuOpen()" (closeMenu)="closeMenu()" />
+  <div class="menu-overlay" [class.open]="isMenuOpen()" (click)="closeMenu()"></div>
+  <main class="main-content">
+    <app-header [title]="pageTitle()" (menuToggle)="toggleMenu()" />
+    <div class="main-content-body">
+      <router-outlet />
+    </div>
+  </main>
+</div>
